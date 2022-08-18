@@ -14,7 +14,8 @@
             <div class="title" style="background-color:#AE6378">
                 <h1> Register </h1>
              </div>
-            <form style='margin-top: 10%; margin-left: 20%; margin-right: 20%;'>
+            <form style='margin-top: 10%; margin-left: 20%; margin-right: 20%;' method='POST'>
+                {% csrf_token %}
                 <div class="form-group">
                     <label for="uname"><b>Username</b></label>
                     <input type="text"class="form-control" placeholder="Enter Username" name="uname" required>
@@ -27,7 +28,7 @@
                     <label for="psw-repeat"><b>Repeat Password</b></label></br>
                     <input type="password" class="form-control" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required></br>
                 </div>
-                    <button type="submit" class="registerbtn">Login</button>
+                    <button type="submit"  class="btn btn-primary registerbtn" >Sign up</button>
             </div>
         </form>
           

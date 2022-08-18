@@ -7,5 +7,6 @@ urlpatterns = [
     path('login/',views.start),
     path('register/',views.register),
     path('task/',views.task),
+    path('welcome/',views.welcome),
     path('__debug__/',include(debug_toolbar.urls))
 ]
